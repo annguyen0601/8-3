@@ -135,11 +135,11 @@ window.onload = function() {
             var seedAnimate = eval(Jscex.compile("async", function() {
                 seed.draw();
                 while (hold) {
-                    $await(Jscex.Async.sleep(12));
+                    $await(Jscex.Async.sleep(10));
                 }
                 while (seed.canScale()) {
-                    seed.scale(1);
-                    $await(Jscex.Async.sleep(12));
+                    seed.scale(0.95);
+                    $await(Jscex.Async.sleep(10));
                 }
                 while (seed.canMove()) {
                     seed.move(0, 2);
@@ -151,14 +151,14 @@ window.onload = function() {
             var growAnimate = eval(Jscex.compile("async", function() {
                 do {
                     tree.grow();
-                    $await(Jscex.Async.sleep(12));
+                    $await(Jscex.Async.sleep(10));
                 } while (tree.canGrow());
             }));
 
             var flowAnimate = eval(Jscex.compile("async", function() {
                 do {
                     tree.flower(2);
-                    $await(Jscex.Async.sleep(12));
+                    $await(Jscex.Async.sleep(10));
                 } while (tree.canFlower());
             }));
 
@@ -187,13 +187,13 @@ window.onload = function() {
                 }
             }));
 
-            var textAnimate = eval(Jscex.compile("async", function() {
-                var together = new Date();
-                together.setFullYear(2018, 2, 8);
-                together.setHours(0);
-                together.setMinutes(0);
-                together.setSeconds(0);
-                together.setMilliseconds(0);
+//             var textAnimate = eval(Jscex.compile("async", function() {
+//                 var together = new Date();
+//                 together.setFullYear(2018, 2, 8);
+//                 together.setHours(0);
+//                 together.setMinutes(0);
+//                 together.setSeconds(0);
+//                 together.setMilliseconds(0);
 
 
 
