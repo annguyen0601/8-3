@@ -38,7 +38,7 @@ window.onload = function() {
                 <div id="code">
                     <font color="#7435f2"><span class="say">Chúc bạn một ngày 8/3 thật ý nghĩa, vui tươi, ngập tràn hạnh phúc.</span><br>
                         <span class="say">Chúc bạn luôn tươi cười, duyên dáng, trẻ trung, năng động.</span><br>
-                        <span class="say">Chúc cho những dự định, kế hoạch của các bạn đều thành công và làm được những điều mình muốn.</span><br>
+                        <span class="say">Chúc cho những dự định, kế hoạch của bạn đều thành công và làm được những điều mình muốn.</span><br>
                         <span class="say">Cuối cùng, Câu lạc bộ Văn hóa Việt Nam xin cảm ơn bạn vì đã đồng hành cùng chúng mình trong suốt thời gian qua. </span><br>
                         <span class="say"><span class="space"><img src="image/tym.png" alt=""><br>
                         <span class="say"></span>- HAPPY WOMEN'S DAY -</span>
@@ -134,11 +134,11 @@ window.onload = function() {
             var seedAnimate = eval(Jscex.compile("async", function() {
                 seed.draw();
                 while (hold) {
-                    $await(Jscex.Async.sleep(10));
+                    $await(Jscex.Async.sleep(12));
                 }
                 while (seed.canScale()) {
-                    seed.scale(0.95);
-                    $await(Jscex.Async.sleep(10));
+                    seed.scale(1);
+                    $await(Jscex.Async.sleep(12));
                 }
                 while (seed.canMove()) {
                     seed.move(0, 2);
@@ -150,14 +150,14 @@ window.onload = function() {
             var growAnimate = eval(Jscex.compile("async", function() {
                 do {
                     tree.grow();
-                    $await(Jscex.Async.sleep(10));
+                    $await(Jscex.Async.sleep(12));
                 } while (tree.canGrow());
             }));
 
             var flowAnimate = eval(Jscex.compile("async", function() {
                 do {
                     tree.flower(2);
-                    $await(Jscex.Async.sleep(10));
+                    $await(Jscex.Async.sleep(12));
                 } while (tree.canFlower());
             }));
 
